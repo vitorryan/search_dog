@@ -4,6 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const imgDog = document.getElementById("imagem_dog")
     const txterro = document.getElementById("txterror")
 
+    const fetchBtn = document.getElementById("fetchBtn");
+    const output = document.getElementById("output");
+
     imgDog.style.display = "none"
 
     searchBtn.addEventListener("click", async () => {
@@ -16,12 +19,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 
                 if (data.status === "success") {
                     txterro.innerHTML = ""
-                    txterro.style;display = "none"
+                    txterro.style.display = "none"
 
                     imgDog.style.display = "block"
                     imgDog.src = data.message
                 } else {
                     imgDog.style.display = "none"
+                    txterro.style.display ="block"
                     txterro.innerHTML = "Erro ao buscar está raça"
                 }
             }
@@ -31,3 +35,4 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     })
 })
+
