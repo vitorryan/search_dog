@@ -22,16 +22,20 @@ header {
 .container {
     width: 100vw;
     flex: 1;
-    background-image: url(fundo2d.jpg);
+    background-image: url(19964702_6205808.jpg);
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 img {
-    height: 20vh;
-    width: 35vw;
+    height: 50vh;
+    width: 40vw;
 
 }
